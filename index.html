@@ -1,0 +1,276 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex, follow">
+        <title>Applicant Test - ClickTripz</title>
+        <base href="https://www.clicktripz.com/"></base>
+        <script type="text/javascript" src="scripts/js/jquery-1.9.1.min.js?v=5.2"></script>
+        <script type="text/javascript" src="scripts/js/jquery-ui-1.10.3.custom.min.js?v=5.2"></script>
+        <script type="text/javascript" src="scripts/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/js/docs.js?v=5.2"></script>
+        <link rel="stylesheet" type="text/css" href="styles/css/bootstrap.min.css?v=5.2" />
+        <link rel="stylesheet" type="text/css" href="styles/css/docs.css?v=5.2" />
+        <link rel="stylesheet" href="styles/css/custom-theme/jquery-ui-1.10.3.custom.min.css?v=5.2" type="text/css" media="screen" charset="utf-8">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+            </head>
+    <body onload="" class="documentation">
+        <div class="container">
+        <div class="grid-12">
+
+    <h2>Publisher Hotel Search Form</h2>
+    <p><span class="label label-primary">Important</span> All fields are required.</p>
+    <form class="form-horizontal" role="form" enctype="multipart/form-data" action="javascript:void(0)" method="get" name="hotelSmallSearchForm" id="hotelSmallSearchForm">
+        <div class="form-group">
+            <label for="city" class="col-md-2 control-label">City:</label>
+
+            <div class="col-md-2">
+                <input type="text" name="city" id="city" value="Madrid, Spain" class="form-control" autocomplete="off"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="date1" class="col-md-2 control-label">Check-in:</label>
+
+            <div class="col-md-2">
+                <input id="date1" name="date1" value="21 Nov 2015" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="date2" class="col-md-2 control-label">Check-out:</label>
+
+            <div class="col-md-2">
+                <input id="date2" name="date2" value="" class="form-control">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="guests" class="col-md-2 control-label">Guests:</label>
+
+            <div class="col-md-1">
+                <select name="guests" type="select-one" id="guests" class="form-control">
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rooms" class="col-md-2 control-label">Rooms:</label>
+
+            <div class="col-md-1">
+                <select name="rooms" type="select-one" id="rooms" class="form-control">
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-2 col-md-offset-2">
+                <button id="search-button" type="submit" class="btn btn-primary">Search Hotels</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="panel">
+      <h2>ClickTripz Hotel Search Form</h2>
+      <form class="form-horizontal" role="form" enctype="multipart/form-data" action="javascript:void(0)" method="get" name="ctSearchForm" id="ctSearchForm">
+          <div class="form-group">
+              <label for="ctCity" class="col-md-2 control-label">City:</label>
+
+              <div class="col-md-2">
+                  <input type="text" name="ctCity" id="ctCity" value="" class="form-control" autocomplete="off"/>
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="ctDate1" class="col-md-2 control-label">Check-in:</label>
+
+              <div class="col-md-2">
+                  <input id="ctDate1" name="ctDate1" value="" class="form-control">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="ctDate2" class="col-md-2 control-label">Check-out:</label>
+
+              <div class="col-md-2">
+                  <input id="ctDate2" name="ctDate2" value="" class="form-control">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="ctGuests" class="col-md-2 control-label">Guests:</label>
+
+              <div class="col-md-1">
+                  <input id="ctGuests" name="ctGuests" value="" class="form-control">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="ctRooms" class="col-md-2 control-label">Rooms:</label>
+
+              <div class="col-md-1">
+                  <input id="ctRooms" name="ctRooms" value="" class="form-control">
+              </div>
+          </div>
+      </form>
+    </div>
+    <h4>Compare Sites:</h4>
+    <div id="ctAnchor">(Checkboxes will appear here)</div>
+
+    <script>
+      var _ctq = _ctq || [];
+      
+      // Create 'compare to' strip object
+      _ctq.push(['newCompareToStrip', 'a']);
+      _ctq.push(['a.setPublisherID', 4]);
+      _ctq.push(['a.setAnchorID', 'ctAnchor']);
+      _ctq.push(['a.setFormID', 'hotelSmallSearchForm']);
+      _ctq.push(['a.setCityNameID', 'city']);
+      _ctq.push(['a.setCheckInID', 'date1']);
+      _ctq.push(['a.setCheckOutID', 'date2']);
+      _ctq.push(['a.setGuestsID', 'guests']);
+      _ctq.push(['a.setRoomsID', 'rooms']);
+
+      // TODO: Attach the correct API methods to our search form, this is a 'Hotel Citywide' search.
+      _ctq.push(['a.setReferralURL', 'http://www.clicktripz.com/oneliner_applicant_test.php']);
+      _ctq.push(['a.optMaxChecked', 1]);
+      _ctq.push(['a.optMaxAdvertisers', 7]);
+      _ctq.push(['a.optMaxSearchesPerDay', 9999]);
+      _ctq.push(['a.optHardLimitSearchesPerSeconds', '9999:1']);
+      _ctq.push(['a.onSubmit', 'customOnSubmitHandler']);
+
+      // TODO: Add command to force a tabbed window to launch instead of individual advertiser pages.
+      _ctq.push(['a.optForceTabbedMode', 'true']);
+
+      // TODO: Add command(s) to force tabbed window to launch as a popunder on IE/FF/Chrome and a popover on Safari
+      _ctq.push(['a.optPopUnder', 'true']);
+      _ctq.push(['a.addCustomPopunder', 'getHotelPopunderURL']);
+      
+      _ctq.push(['a.optThumbSize', 'small']);
+      _ctq.push(['a.draw']);
+
+      (function() {
+        var ct = document.createElement('script'); ct.type = 'text/javascript'; ct.async = true;
+        ct.src = '//static.clicktripz.com/scripts/js/ct.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ct, s);
+      })();
+
+      function getHotelPopunderURL() {
+        console.log('get popunder url');
+        // get pre-fill values from search form
+        var destination = $('#city').val();
+        var startDate = $('#date1').val();
+        var endDate = $('#date2').val();
+
+        // return URL to open in popunder
+        return "https://www.clicktripz.com/docs/js/examples/custom_popunders_window.php" +
+          "?destination=" + destination +
+          "&startDate=" + startDate +
+          "&endDate=" + endDate;
+      }
+
+      // TODO: Add handler to sync search inputs and launch the ClickTripz Tabbed Window
+      function syncForms() {
+        $('#hotelSmallSearchForm input:text, select').each(function() {
+          var _val = $(this).val(), _id = $(this).prop('id');
+          _id = _id.charAt(0).toUpperCase() + _id.slice(1);
+          $('#ct' + _id).val(_val);
+        });
+      }
+
+      $('#hotelSmallSearchForm input:text, select').blur(syncForms).change(syncForms);
+
+    </script>
+    <script type="text/javascript">
+        // datepickers
+        $(function () {
+            $('#date1').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                showOn: 'both',
+                dateFormat: 'dd M yy',
+                buttonImage: '//static.clicktripz.com/images/calendar.png',
+                buttonImageOnly: true,
+                minDate: '0d',
+                duration: '',
+                onSelect: function (dateText) {
+                    var startDate = new Date($('#date1').datepicker('getDate'));
+                    var endDate = new Date($('#date2').datepicker('getDate'));
+                    $('#date2').datepicker('option', 'minDate', $('#date1').datepicker('getDate'));
+                    if (endDate < startDate) {
+                        $('#date2').datepicker('setDate', "");
+                    }
+                },
+                onClose: function (dateText) {
+                    $('#date1').each(function (index) {
+                        $(this).datepicker("disable"); // need to disable, set date, then re-enable for IE, otherwise datepicker dialog opens.
+                        $(this).datepicker('setDate', dateText);
+                        $(this).datepicker("enable");
+                    });
+                }
+            });
+        });
+        $(function () {
+            $('#date2').datepicker({
+                changeMonth: true,
+                changeYear: true,
+                showOn: 'both',
+                dateFormat: 'dd M yy',
+                buttonImage: '//static.clicktripz.com/images/calendar.png',
+                buttonImageOnly: true,
+                minDate: '0d',
+                duration: '',
+                onClose: function (dateText) {
+                    $('#date2').each(function (index) {
+                        $(this).datepicker("disable");
+                        $(this).datepicker('setDate', dateText);
+                        $(this).datepicker("enable");
+                    });
+                }
+            });
+        });
+
+        $('#city').autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    url: '//www.clicktripz.com/autocomplete_hotels.php',
+                    dataType: 'jsonp',
+                    data: {
+                        term: request.term,
+                        highlight: 'off'
+                    },
+                    minLength: 3,
+                    delay: 100,
+                    success: function (data) {
+                        response(data);
+                    }
+                });
+            }
+        });
+    </script>
+        </div><!-- [END] grid -->
+        </div><!-- END .container -->
+        <footer class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">&copy; 2010&ndash;2015 Clicktripz</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
